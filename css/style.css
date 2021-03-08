@@ -1,0 +1,94 @@
+/* Reset html original styles*/
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Georgia, serif;
+  color: #252525;
+}
+
+/* Menu */
+.menu {
+  background-color: #252525;
+  padding: 20px 0;
+}
+
+.menuContainer {
+  max-width: 960px;
+  /* centralizar */
+  /* primeiro valor cima e baixo, segundo valor esq e direita */
+  margin: 0 auto;
+}
+
+/* clear fix - to fix double float in the container */
+.menuContainer::after,
+.menuContainer::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* link  */
+.menuLogo {
+  /* ocupa 100%  */
+  display: block;
+  float: left;
+  margin-left: 10px;
+}
+
+.menuNav {
+  float: right;
+  margin-right: 10px;
+}
+
+.menuNav li {
+  display: inline-block;
+}
+
+.menuNav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  /* 18px - base do browser = 16 px (padrão) -> 18 / 16 == 1.125em */
+  font-size: 1.125em;
+}
+
+/* INTRO  */
+.intro {
+  background: url("../img/bg-intro.jpg") no-repeat center center;
+  background-size: cover;
+  /* height: 500px; */
+  padding: 150px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.intro h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+/* separador */
+.intro h1::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 4px;
+  background: #fff;
+  /* centralizar e 10px baixo e cima */
+  margin: 10px auto;
+}
+
+.intro p {
+  font-style: italic;
+  font-size: 1.125em;
+}
