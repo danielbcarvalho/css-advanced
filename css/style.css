@@ -92,3 +92,64 @@ body {
   font-style: italic;
   font-size: 1.125em;
 }
+
+/* SOBRE */
+.about {
+  padding: 60px 0;
+}
+
+.aboutContainer {
+  max-width: 960px;
+  /* centralizar */
+  /* primeiro valor cima e baixo, segundo valor esq e direita */
+  margin: 0 auto;
+}
+
+/* clear fix - to fix double float in the container */
+.aboutContainer::after,
+.aboutContainer::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2.25em;
+  margin-bottom: 60px;
+}
+
+.aboutItem {
+  width: 460px;
+  float: left;
+  margin: 0 10px;
+}
+
+.aboutItem img {
+  display: block;
+  max-width: 100%;
+}
+
+.aboutItem h3 {
+  font-size: 2.25em;
+  line-height: 1em;
+  background: #252525;
+  width: 225px;
+  color: #fff;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+  padding: 5px 0 10px 0;
+  /* posicionamento */
+  top: -25px;
+  position: relative;
+}
+
+.about > p {
+  font-size: 1.25em;
+  line-height: 1.4em;
+  font-style: italic;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 460px;
+}
